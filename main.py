@@ -6,18 +6,20 @@ for i in range (0,6):
 
   #Inner Loop
   for j in range (0, 6):
-    print("inner loop | i = " + str(i) + " | j = " + str(j))
+
+
+    #They must both be even  
+    if (i%2) == 0 and (j%2) == 0:
+      print("Both even")
+
+    #They must both be odd
+    if (i%3) == 0 and (j%3) == 0:
+      print("Both odd")
     
-    print(i, j)
+
+
+    print("inner loop | i = " + str(i) + " | j = " + str(j))
+
 
 #Original Verison^^^^^^^Experiement Below
 
- #Outer Loop
-for i in range (0,10):
-  print("Outer Loop | i = " + str(i) )
-
-  #Inner Loop
-  for j in range (0, 10):
-    print("inner loop | i = " + str(i) + " | j = " + str(j))
-    
-    print(i, j)
